@@ -4,17 +4,36 @@ Supplemental material for the manuscript:
 
 > Belejo, A., Barbosa, A. R., and Higgins, C. "Seismic Fragility of Regular and Irregular RC Bridges with Lap-Splice Deficiencies: Influence of Retrofits with Titanium Bars and Ground Motion Duration." Submitted to *ASCE Journal of Bridge Engineering* (manuscript BEENG-8526).
 
-## Contents
-
-| File | Description |
-|---|---|
-| `BEENG-8526_Supplemental_Material_TablesS1-S5.pdf` | Tables S1–S5 (PDF) |
-| `BEENG-8526_Supplemental_Material_TablesS1-S5.docx` | Same tables (Word) |
-
-Tables S1–S5 list the ground motion records used in the incremental dynamic analyses: the pairs of long- and short-duration records selected for the three-span bridges (Table S1) and the four-span bridges (Table S2), with the scale factors and rotation angles applied to the short-duration records, and the characteristics of the long-duration records (Table S3) and of the two sets of short-duration records (Tables S4 and S5).
-
 A permanent DOI will be assigned to this material if the paper is accepted for publication.
+
+## Repository contents
+
+```
+.
+├── README.md                                          this file
+├── LICENSE                                            CC BY 4.0
+├── BEENG-8526_Supplemental_Material_TablesS1-S5.pdf   Tables S1–S5 (PDF)
+├── BEENG-8526_Supplemental_Material_TablesS1-S5.docx  Tables S1–S5 (Word)
+└── models/                                            OpenSees (Tcl) models of the ten bridges
+    ├── README.md                                      model details and how to run them
+    ├── RB1/   B1.tcl      RB1R/ B1R.tcl
+    ├── RB2/   B5.tcl      RB2R/ B5R.tcl
+    ├── IB1/   B2.tcl      IB1R/ B2R.tcl
+    ├── IB2/   B3.tcl      IB2R/ B3R.tcl
+    └── IB3/   B4.tcl      IB3R/ B4R.tcl
+```
+
+| Item | Description |
+|---|---|
+| Tables S1–S5 | Ground motion records used in the incremental dynamic analyses: record pairs for the three-span bridges (Table S1) and four-span bridges (Table S2), with the scale factors and rotation angles applied to the short-duration records, and the characteristics of the long-duration records (Table S3) and the two sets of short-duration records (Tables S4 and S5). |
+| `models/` | One Tcl input file per bridge case study (as-built and TiAB-retrofitted). Folder names are the bridge labels used in the paper; file names are the original names used in the analyses. See [`models/README.md`](models/README.md). |
+
+## Software required to reproduce the results
+
+**OpenSees version 2.5.0** (Tcl interpreter, Windows executable `OpenSees2.5.exe`). All analyses in the paper were run with this version. Other OpenSees versions may give slightly different results because of changes to material models, element formulations, and solvers between releases.
+
+The models use only built-in OpenSees 2.5.0 commands, including `Concrete02`, `ConcretewBeta`, `Steel02`, `Pinching4`, `HyperbolicGapMaterial`, `Elastic`, `dispBeamColumn` with `Fiber` sections, `elasticBeamColumn`, `truss`, and `zeroLength` elements.
 
 ## License
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Please cite the paper above if you use this material.
