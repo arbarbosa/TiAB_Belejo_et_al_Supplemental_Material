@@ -1,6 +1,6 @@
 # OpenSees bridge models
 
-Tcl input files for the ten bridge case studies in the paper. **Run with OpenSees 2.5.0** (the version used for every analysis in the paper).
+Tcl input files for the ten bridge case studies in the paper. **Run with OpenSees 2.5.0 (rev 6248)**, the version used for every analysis in the paper.
 
 ## Files
 
@@ -23,7 +23,7 @@ Clear column heights: short = 3.05 m (10 ft), median = 4.88 m (16 ft), long = 6.
 
 ## Units
 
-kip, inch, second (g = 386.4 in/s²). Ground motion acceleration input files are in units of g.
+kip, inch, second (g = 386.4 in/s²). Ground motion acceleration input files (`../ground_motions/`) are in units of g.
 
 ## What each file does
 
@@ -43,9 +43,10 @@ set npts 100000;                 # replace with the number of points in the reco
 set dt 100000;                   # replace with the record time step (s)
 ```
 
-- Put the two horizontal components of the record in `X_Eake.g3` and `Y_Eake.g3` (one acceleration value in g per line, or whitespace-separated, at constant time step `dt`) in the folder you run from.
-- **Scale factor:** for intensity level Sa(T₁) = *S*, use SF = *S* / Sa(T₁) of the **long-duration** record of the pair. The same SF is applied to the short-duration record of that pair ("same scale factor" approach). Intensity levels were run in steps of 0.1g.
-- **Record orientation:** the files apply component 2 along global X (`GMdirectionX 2`) and component 1 along global Y (`GMdirectionY 1`). Each record pair was also run in the other orientation, obtained by swapping these two values (`GMdirectionX 1`, `GMdirectionY 2`); this is the only difference between the two orientations.
+1. **Record files:** copy `X_Eake.g3` and `Y_Eake.g3` of the record from [`../ground_motions/`](../ground_motions/) into the folder you run from (acceleration in g, constant time step).
+2. **`npts` and `dt`:** take them from [`../ground_motions/index.csv`](../ground_motions/index.csv).
+3. **Scale factor:** for intensity level Sa(T₁) = *S*, use SF = *S* / Sa(T₁) of the **long-duration** record of that pair, for that bridge and orientation, as listed in [`../ground_motions/Sa_T1_by_bridge.csv`](../ground_motions/Sa_T1_by_bridge.csv). The same SF is applied to the short-duration record of the pair ("same scale factor" approach). Intensity levels were run in steps of 0.1g.
+4. **Orientation:** `pattern UniformExcitation` applies `X_Eake.g3` along global direction `GMdirectionX` and `Y_Eake.g3` along `GMdirectionY`. The files as published use `GMdirectionX 2` / `GMdirectionY 1` (orientation 2). Each pair was also run in orientation 1 (`GMdirectionX 1` / `GMdirectionY 2`); swapping these two values is the only change to the model file.
 
 Then run:
 
