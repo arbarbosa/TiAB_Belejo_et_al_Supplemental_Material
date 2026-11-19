@@ -15,7 +15,7 @@ Pair numbers are the pair numbers in Tables S1 and S2. Each `pairNN` folder hold
 - `X_Eake.g3`: horizontal component applied along global direction `GMdirectionX` in the model
 - `Y_Eake.g3`: horizontal component applied along global direction `GMdirectionY`
 
-One acceleration value (in g) per line, at constant time step. The short-duration records are already rotated by the angle θ in Tables S1–S2. The scale factor is **not** applied in the files; it is applied in the model through `Qake_factor` (see [`../models/README.md`](../models/README.md)).
+One acceleration value (in g) per line, at constant time step. The long-duration files are the as-recorded components. The short-duration files are the processed records used in the analyses: each is a linear combination of the two as-recorded components of the source record (i.e., already rotated and amplitude-adjusted during record preparation). The intensity scale factor is **not** included in any file; it is applied in the model through `Qake_factor` (see [`../models/README.md`](../models/README.md)).
 
 ## Tables
 
