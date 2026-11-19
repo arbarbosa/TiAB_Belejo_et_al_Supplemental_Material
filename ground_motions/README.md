@@ -20,7 +20,7 @@ One acceleration value (in g) per line, at constant time step. The long-duration
 ## Tables
 
 - **`index.csv`**: one row per record: set, pair, folder, source record files (PEER `.AT2` format), number of points `npts`, and time step `dt_s` (s). Use `npts` and `dt` in the model header.
-- **`Sa_T1_by_bridge.csv`**: the Sa(T₁) values (g) of the long- and short-duration records used to compute the scale factors, for each bridge, orientation (`GMdirectionX`/`GMdirectionY` values), and pair. The scale factor at intensity *S* is SF = *S* / `Sa_T1_long_g`, applied to both records of the pair.
+- **`Sa_T1_by_bridge.csv`**: the Sa(T₁) values (g), computed at the fundamental period T₁ of each bridge model, of the long- and short-duration records used to compute the scale factors, for each bridge, orientation (`GMdirectionX`/`GMdirectionY` values), and pair. The scale factor at intensity *S* is SF = *S* / `Sa_T1_long_g`, applied to both records of the pair.
 
 ## Sources and credit
 
@@ -34,5 +34,5 @@ Please credit these sources if you use the records, and follow their terms of us
 
 ## Notes
 
-- **Pair 10, long duration:** the analyses used station MYGH08 (Iwanuma) NS for `X_Eake.g3` and station MYGH09 (Shiroishi) EW for `Y_Eake.g3`. The files here are the ones used in the analyses.
+- **Pair 10, long duration:** the input files combine station MYGH08 (Iwanuma) NS (`X_Eake.g3`) with station MYGH09 (Shiroishi) EW (`Y_Eake.g3`), as listed in Table S3 (components 10H2 and 10H1).
 - **Pair 28, four-span short-duration set:** the record files of pair 26 (2007 Chuetsu-oki, Joetsu Kita, RSN4840) were used, with the rotation and scale factor of pair 28 (see the footnotes to Tables S2 and S5).
