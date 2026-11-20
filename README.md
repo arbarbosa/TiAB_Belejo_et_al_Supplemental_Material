@@ -10,24 +10,24 @@ A permanent DOI will be assigned to this material if the paper is accepted for p
 
 ```
 .
-├── README.md                                          this file
-├── LICENSE                                            CC BY 4.0
-├── BEENG-8526_Supplemental_Material_TablesS1-S5.pdf   Tables S1–S5 (PDF)
-├── BEENG-8526_Supplemental_Material_TablesS1-S5.docx  Tables S1–S5 (Word)
-├── models/                                            OpenSees (Tcl) models of the ten bridges
-│   ├── README.md                                      model details and how to run them
+├── README.md                                            this file
+├── LICENSE                                              CC BY 4.0
+├── Belejo_et_al_Supplemental_Material_TablesS1-S5.pdf   Tables S1–S5 (PDF)
+├── Belejo_et_al_Supplemental_Material_TablesS1-S5.docx  Tables S1–S5 (Word)
+├── models/                                              OpenSees (Tcl) models of the ten bridges
+│   ├── README.md                                        model details and how to run them
 │   ├── RB1/   B1.tcl      RB1R/ B1R.tcl
 │   ├── RB2/   B5.tcl      RB2R/ B5R.tcl
 │   ├── IB1/   B2.tcl      IB1R/ B2R.tcl
 │   ├── IB2/   B3.tcl      IB2R/ B3R.tcl
 │   └── IB3/   B4.tcl      IB3R/ B4R.tcl
-└── ground_motions/                                    ground motion input files used in the analyses
-    ├── README.md                                      file format, sources, and notes
-    ├── index.csv                                      source records, npts and dt for each input file
-    ├── Sa_T1_by_bridge.csv                            Sa(T1) used for scaling, by bridge, orientation and pair
-    ├── long_duration/pair01 … pair32/                 X_Eake.g3, Y_Eake.g3
-    ├── short_duration_3span_RB1/pair01 … pair32/      X_Eake.g3, Y_Eake.g3
-    └── short_duration_4span_RB2_IB/pair01 … pair32/   X_Eake.g3, Y_Eake.g3
+└── ground_motions/                                      ground motion input files used in the analyses
+    ├── README.md                                        file format, sources, and notes
+    ├── index.csv                                        source records, npts and dt for each input file
+    ├── Sa_T1_by_bridge.csv                              Sa(T1) used for scaling, by bridge, orientation and pair
+    ├── long_duration/pair01 … pair32/                   X_Eake.g3, Y_Eake.g3
+    ├── short_duration_3span_RB1/pair01 … pair32/        X_Eake.g3, Y_Eake.g3
+    └── short_duration_4span_RB2_IB/pair01 … pair32/     X_Eake.g3, Y_Eake.g3
 ```
 
 | Item | Description |
