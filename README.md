@@ -4,7 +4,7 @@ Supplemental material for the manuscript:
 
 > Belejo, A., Barbosa, A. R., and Higgins, C. "Seismic Fragility of Regular and Irregular RC Bridges with Lap-Splice Deficiencies: Influence of Retrofits with Titanium Bars and Ground Motion Duration." Submitted to *ASCE Journal of Bridge Engineering* (manuscript BEENG-8526).
 
-A permanent DOI will be assigned to this material if the paper is accepted for publication.
+Archived in Zenodo: [https://doi.org/10.5281/zenodo.24421580](https://doi.org/10.5281/zenodo.24421580) (version v1.0).
 
 ## Repository contents
 
