@@ -1,0 +1,14 @@
+{
+  "title": "Supplemental material for \"Seismic Fragility of Regular and Irregular RC Bridges with Lap-Splice Deficiencies: Influence of Retrofits with Titanium Bars and Ground Motion Duration\"",
+  "upload_type": "dataset",
+  "description": "<p>Supplemental material for the manuscript by Belejo, Barbosa, and Higgins submitted to the ASCE Journal of Bridge Engineering (manuscript BEENG-8526). Includes Tables S1–S5 (ground motion record pairs, scale factors, rotation angles, and record characteristics), the acceleration input files used in the incremental dynamic analyses, the Sa(T1) values used for scaling, and the OpenSees 2.5.0 (rev 6248) Tcl models of the ten bridge case studies (as-built and titanium alloy bar retrofitted).</p>",
+  "creators": [
+    {"name": "Belejo, Andre", "affiliation": "Betar Estudos e Projectos de Estabilidade"},
+    {"name": "Barbosa, Andre R.", "affiliation": "Oregon State University"},
+    {"name": "Higgins, Christopher", "affiliation": "Oregon State University"}
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "keywords": ["bridges", "seismic fragility", "lap splices", "titanium alloy bars", "retrofit", "ground motion duration", "incremental dynamic analysis", "OpenSees"],
+  "language": "eng"
+}
